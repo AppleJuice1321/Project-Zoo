@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(planks.jpg);  
+}
+/* Image source: https://www.pexels.com/da-dk/foto/trae-beskidt-monster-tekstur-172278/ */
+
+/* ===== CONTAINER ==================================================================================== */
+.wrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    padding: 0 10px;
+}
+
+/* ===== HEADING, TEXT, SCORE ========================================================================== */
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: goldenrod;
+}
+
+.textIntroduction, .textInstruction {
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.textInstruction {
+    color: red;
+}
+
+.pointContainer {
+    display: flex;
+}
+
+#score {
+    margin-left: 5px;
+}
+
+#point {
+    background-color: lightgreen;
+    border: solid goldenrod 5px;
+    padding: 10px;
+}
+
+/* ===== ANIMAL CONTAINER ==================================================================================== */
+#animals {
+    margin: 0 0 400px 0;
+    border: solid goldenrod 5px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+
+.dropAnimals {
+    border: solid lightgray 2px;
+    padding: 20px 30px;
+    margin:0 10px;
+}
+
+/* .tigerImage, .tigerCap {
+    display: none;
+}
+
+.tigerBox {
+    border: solid black 3px;
+    padding: 20px;
+}
+
+.tigerBox:hover {
+    display: block;
+
+} */
+
+/* ===== FOOD CONTINER ==================================================================================== */
+#footerFood {
+    bottom: 0;
+    position: fixed;
+    border: solid goldenrod 5px;
+    background-color: white;
+    margin: 0 136.5px;
+}
+
+.foodHeading {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 0 10px;
+}
+
+.foodContainer {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid lightgray 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.dragFood {
+    background-color: greenyellow;
+    padding: 5px 2px;
+    width: 150px;
+    margin: 10px;
+    text-align: left;
+
+}
+
+.resetPageButton {
+    border: none;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin: 20px 10px;
+    background-color: black;
+    color: white;
+}
+
+.resetPageButton:hover {
+    background-color: darkred;
+}
+
+.hideFoodButton {
+    border: none;
+    padding: 6px 8px;
+    margin: 0 10px 10px;
+    border-radius: 5px;
+    background-color: lightgray;
+
+}
+
+.hideFoodButton:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* .wrapperFooter {
+    display: hidden;
+} */

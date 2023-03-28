@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zoo.css">
+    <title>ZOOLOGISK HAVE</title>
+</head>
+<body>
+    <!-- ========================================================================================= -->
+    <div class="wrapper">
+    <!-- Title-->
+   <h1>Zoo Spill 🐾</h1>
+
+       <!-- ========================================================================================= -->
+   <!-- Point system-->
+   <section id="point">
+    <h2>Din score:</h2>
+    <article class="pointContainer">
+        <p class="labelScore">Points:</p>
+        <p id="score">0</p>
+    </article>
+   </section>
+
+       <!-- ========================================================================================= -->
+   <!-- animals-->
+   <section id="animals">
+    <p class="textIntroduction">Som dyrepasser har du nu ansvaret for at fodre alle arter af dyr i denne her zoo. Ved du hvad de spiser og om de kan lide det?</p>
+    <p class="textInstruction">TIP: Fordre dyrene ved at trække maden hen over et dyr og give slip.</p>
+    <!-- Carnivores-->
+    <div class="dropAnimals" id="tiger" data-food="meat">Tiger 🐯</div>
+    <!-- <figure class="tigerBox">
+        <div class="dropAnimals" id="tiger" data-food="meat">Tiger 🐯</div>
+        <img class="tigerImage" src="" alt="">
+        <figcaption class="tigerCap">This is a Tiger</figcaption>
+    </figure> -->
+    <div class="dropAnimals" id="wolf" data-food="meat">Wolf 🐺</div>
+    <div class="dropAnimals" id="lion" data-food="meat">Lion 🦁</div>
+    <div class="dropAnimals" id="eagle" data-food="meat">Eagle 🦅</div>
+    <!-- Frugivore-->
+    <div class="dropAnimals" id="gorilla" data-food="fruit">Gorilla 🦍</div>
+    <div class="dropAnimals" id="rabbit" data-food="fruit">Rabbit 🐇</div>
+    <div class="dropAnimals" id="bat" data-food="fruit">Bat 🦇</div>
+    <div class="dropAnimals" id="chipmunk" data-food="fruit">Chipmunk 🐿</div>
+    <!-- Herbivores-->
+    <div class="dropAnimals" id="elephant" data-food="plant">Elephant 🐘</div>
+    <div class="dropAnimals" id="kangaroo" data-food="plant">Kangaroo 🦘</div>
+    <div class="dropAnimals" id="sloth" data-food="plant">Sloth 🦥</div>
+    <div class="dropAnimals" id="bison" data-food="plant">Bison 🦬</div>
+    <div class="dropAnimals" id="deer" data-food="plant">Deer 🦌</div>
+   </section>
+</div>
+
+    <!-- ========================================================================================= -->
+<footer id="footerFood">
+    <!-- Foods-->
+     <section id="foodSection">
+        <article class="foodHeading">
+            <h2>Mad til dyrene:</h2>
+            <button class="hideFoodButton">Hide</button>
+        </article>
+         <div class="foodContainer">
+             <!-- FRUITS-->
+             <article class="dragFood" id="apple" draggable="True" data-food="fruit">🍎 Apple</article>
+             <article class="dragFood" id="banana" draggable="True" data-food="fruit">🍌 Banana</article>
+             <article class="dragFood" id="ananas" draggable="True" data-food="fruit">🍍 Ananas</article>
+             <article class="dragFood" id="peach" draggable="True" data-food="fruit">🍑 Peach</article>
+             <article class="dragFood" id="pear" draggable="True" data-food="fruit">🍐 Pear</article>
+             <article class="dragFood" id="mango" draggable="True" data-food="fruit">🥭 Mango</article>
+             <article class="dragFood" id="watermelon" draggable="True" data-food="fruit">🍉 Watermelon</article>
+             <article class="dragFood" id="grape" draggable="True" data-food="fruit">🍇 Grape</article>
+             <!-- MEATS-->
+             <article class="dragFood" id="buffaloMeat" draggable="True" data-food="meat">🥩 Buffalo meat</article>
+             <article class="dragFood" id="zebraMeat" draggable="True" data-food="meat">🥩 Zebra meat</article>
+             <article class="dragFood" id="warthogMeat" draggable="True" data-food="meat">🥩 Warthog meat</article>
+             <article class="dragFood" id="antelopeMeat" draggable="True" data-food="meat">🥩 Antelope meat</article>
+             <article class="dragFood" id="humanMeat" draggable="True" data-food="meat">🥩 Human meat</article>
+             <article class="dragFood" id="deerMeat" draggable="True" data-food="meat">🥩 Deer meat</article>
+             <!-- PLANTS-->
+             <article class="dragFood" id="grass" draggable="True" data-food="plant">🌿 Grass</article>
+             <article class="dragFood" id="carrots" draggable="True" data-food="plant">🥕 Carrots</article>
+             <article class="dragFood" id="broccoli" draggable="True" data-food="plant">🥦 Broccoli</article>
+             <article class="dragFood" id="potato" draggable="True" data-food="plant">🥔 Potato</article>
+             <article class="dragFood" id="corn" draggable="True" data-food="plant">🌽 Corn</article>
+             <article class="dragFood" id="salad" draggable="True" data-food="plant">🥬 Salad</article>
+         </div>
+     </section>
+
+     <!-- Refreshes the page-->
+     <button class="resetPageButton" onclick="window.location.reload();">Reset</button>
+</footer>
+
+    <!-- ========================================================================================= -->
+    <!-- JS-->
+    <script src="zoo.js" defer></script>
+</body>
+</html>
